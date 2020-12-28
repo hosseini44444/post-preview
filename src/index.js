@@ -1,14 +1,14 @@
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+  value: true,
 });
 exports.default = void 0;
 
 /**
  * Builds HTML blog post previews with the specified character length on client side.
  * Accepts a blog post container HTMLElement and returns a blog post preview as a HTML string that can be sent to and sanitized and stored in the backend.
- * remember that this function will not return text only nodes that are not a child of an HTMLElement 
+ * remember that this function will not return text only nodes that are not a child of an HTMLElement
  * The result will contain the blog post container HTMLElement.
  * Readme and Examples can be found at {@link https://github.com/hosseini44444/post-preview GitHub}
  * @param {HTMLElement} postContainer  The Parent Element of your blog post editor
@@ -41,7 +41,6 @@ const postPreview = (postContainer, length, additions = "") => {
   for (let i = 0; i < elements.length; i++) {
     const childOuterHTML = elements[i].outerHTML;
     const totalLength = additions.length + emptyLength + currentSum.length + childOuterHTML.length;
-
     if (totalLength === length) {
       nullSource.innerHTML = currentSum + childOuterHTML;
       return additions + nullSource.outerHTML;
@@ -53,9 +52,6 @@ const postPreview = (postContainer, length, additions = "") => {
       return additions + nullSource.outerHTML;
     }
   }
-
-  return additions + currentSum;
 };
-
 var _default = postPreview;
 exports.default = _default;
