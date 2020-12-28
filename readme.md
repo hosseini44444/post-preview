@@ -3,7 +3,9 @@
 
 # post-preview
 
-**post-preview** is an open-source light-weight client side blog post preview generator or HTML summarizer
+Open-source, Light-weight, client side blog post preview generator or HTML summarizer
+
+[![npm](https://img.shields.io/npm/v/post-preview?color=green)](https://www.npmjs.com/package/post-preview) [![Build Status](https://travis-ci.org/hosseini44444/post-preview.svg?branch=main)](https://travis-ci.org/hosseini44444/post-preview) [![Coverage Status](https://coveralls.io/repos/github/hosseini44444/post-preview/badge.svg?branch=main)](https://coveralls.io/github/hosseini44444/post-preview?branch=main)
 
 ## Installation
 
@@ -31,6 +33,14 @@ postPreview(postContainer: HTMLElement, length: number, additions?: string): str
 
 
 ## example
+js:
+```js
+import  postPreview  from  "post-preview";
+
+const  postContainer = document.querySelector(".blogPostContainer");
+const  previewContainer = document.querySelector(".preview");
+previewContainer.innerHTML = postPreview(postContainer, 200);
+```
 html (complete blog post): 
 ```html
 <div class="blogPostContainer">
@@ -55,13 +65,6 @@ html (complete blog post):
 
 ```
 
-js:
-```js
-import  postPreview  from  "post-preview";
-const  postContainer = document.querySelector(".blogPostContainer");
-const  previewContainer = document.querySelector(".preview");
-previewContainer.innerHTML = postPreview(postContainer, 200);
-```
 result (blog post preview):
 ```html
 <div class="preview">
