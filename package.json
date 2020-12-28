@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/hosseini44444/post-preview/issues"
   },
-  "homepage": "https://github.com/hosseini44444/post-preview#readme"
+  "homepage": "https://github.com/hosseini44444/post-preview#readme",
+  "devDependencies": {
+    "eslint": "^7.16.0"
+  }
 }
