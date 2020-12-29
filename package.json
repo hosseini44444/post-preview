@@ -1,6 +1,6 @@
 {
   "name": "post-preview",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Builds HTML blog post previews with the specified character length on client side.",
   "main": "src/index.js",
   "scripts": {
