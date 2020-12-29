@@ -11,7 +11,7 @@ Open-source, Light-weight, client side blog post preview generator or HTML summa
 
 using npm:
 ```sh
-npm install --save post-preview `
+npm install --save post-preview
 ```
 ## usage
 ```js
