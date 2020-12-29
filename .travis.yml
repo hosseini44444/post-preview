@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '11'
+script:
+- npm run coveralls
+deploy:
+  provider: npm
+  email: hosseini44444@gmail.com
+  api_key:
+    secure: uEHiGOFfwYh/cjmcgMlQE+0p82WvNSjDaBTYUJeAcJfAotq2Ba4wDF2wrDb87ZNySfm4HFMuLmTy4PH4dWbS6Bu+S2t0s+sEXYiQYqCZpG4FMsWKsDZKR6PlEIcSQOjF3n2LgDrrivqeJhppGy1Pw7VKdmLBFkwaa7Kn5EfSyH7O4hom8WbMxeCZ55cy+/NfBRHoIeOIRSlC7OmfxyK3xSlSrtEbwJ9herD/GPlWSJ2kLa/QJ3s/OFTs4e05Wzrz8PrTsbtOZqrZ11xx2Hsg8UNW9wT5GV6sAr8L4H60d0jT5dAAc4Mq2ymBVI9iB0PxMmp4TU0AV/HXsbGLFr/jSoHwU64i6m+blyiTL8GkQioyE9wYx4QKhkvvY7IByE6akCpjB0Pph61C+4Ypv0ttHI0DDLV+jR40ON15EK//jXZT4aHWqim6HxgntVSgU01s8ygJ1Qqnh6gZIYJukKOQbhJ6wKJ+clhxFnlCgMHnoDs/9QzV9f6rVOW0BJV+Goj0zwNRZgmfXd14X1yJV6M9q6XorhIiLt2tusJSHvyzg521kT0HU4qCrPXAKaDMyiTy5pDnQkFRY/lhdn5JC0lebrfXMdzr5f0EpoEp1cmQrL0rin/HpFMio0jZO4ix1qkFimvEqO/GvlKtM7dS9UmluI+GiAxJ2bu4meQFL5FQIss=
+  on:
+    tags: true
